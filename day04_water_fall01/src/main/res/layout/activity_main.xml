@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toLeftOf="@id/btn"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="输入"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/edit"
+        app:layout_constraintBottom_toBottomOf="@id/edit"
+        app:layout_constraintLeft_toRightOf="@id/edit"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="搜索"
+        />
+    <com.example.day04_water_fall01.WaterFall
+        android:id="@+id/water_fall"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit"
+        >
+
+    </com.example.day04_water_fall01.WaterFall>
+</android.support.constraint.ConstraintLayout>
