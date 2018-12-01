@@ -38,6 +38,10 @@ public class WaterDao {
     public void del(String name ){
         sb.delete("waters","name = ?",new String[]{name});
     }
+    //删除所有
+    public void delAll(){
+        sb.delete("waters",null,null);
+    }
     //查询
     public List<String> select(){
         List<String> list = new ArrayList<>();

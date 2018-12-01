@@ -27,12 +27,19 @@
     <com.example.day04_water_fall01.WaterFall
         android:id="@+id/water_fall"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit"
-        >
-
-    </com.example.day04_water_fall01.WaterFall>
+        />
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/water_fall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="清空历史"
+        />
 </android.support.constraint.ConstraintLayout>
