@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTurntable">
+        <!--name为属性的名字，可以随意起，只要符合规则看的懂-->
+        <!--format为属性内容的类型-->
+        <attr name="text" format="string"/>
+    </declare-styleable>
+   <declare-styleable name="WeekFlowLayout">
+       <attr name="textColor" format="color"/>
+   </declare-styleable>
+</resources>

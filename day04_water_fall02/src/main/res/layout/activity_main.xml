@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.day04_water_fall02.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.day04_water_fall02.WaterGroupNameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索历史"
+        android:textColor="#00ff00" />
+    <com.example.day04_water_fall02.WaterFall
+        android:id="@+id/water_fall_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="清空历史"
+        />
+    <com.example.day04_water_fall02.WaterGroupNameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="热门搜索"
+        android:textColor="#00ffff" />
+
+    <com.example.day04_water_fall02.WaterFall
+        android:id="@+id/water_fall_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
