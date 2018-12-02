@@ -47,13 +47,15 @@ public class WaterFall extends LinearLayout {
             View view = getChildAt(i);
             //判断是否是一行的开头
             if (left != 0) {
-                //需要换行了，因为放不下
+                //如果子元素的宽度+左边距>大于夫需要换行了，因为放不下
                 if ((left + view.getMeasuredWidth()) > sizeWidth) {
                     //计算出下一行的top
                     top += mChildMaxHeight + mVSpace;
+                    //重新计算 left需要归零
                     left = 0;
                 }
             }
+
             left += view.getMeasuredWidth() + mHSpace;
         }
         setMeasuredDimension(sizeWidth, (top + mChildMaxHeight) > sizeHeight ? sizeHeight : top + mChildMaxHeight);
@@ -91,8 +93,11 @@ public class WaterFall extends LinearLayout {
         mChildMaxHeight = 0;
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
+            //返回指定位置的视图
             View view = getChildAt(i);
+            //指定的高度是否打于最高的高度
             if (view.getMeasuredHeight() > mChildMaxHeight) {
+                //如果大于就把指定的高度赋值最高的
                 mChildMaxHeight = view.getMeasuredHeight();
             }
         }

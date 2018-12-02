@@ -5,17 +5,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
+    <!--标题放大镜和输入框的自定义view-->
     <com.example.day04_water_fall02.TitleBarView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+    <!--搜索历史的自定义view和热门搜索公用一个-->
     <com.example.day04_water_fall02.WaterGroupNameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="搜索历史"
         android:textColor="#00ff00" />
+    <!--显示内容的自定义view-->
     <com.example.day04_water_fall02.WaterFall
         android:id="@+id/water_fall_search"
         android:layout_width="wrap_content"
@@ -28,13 +29,14 @@
         android:layout_gravity="center"
         android:text="清空历史"
         />
+    <!--热门搜索的自定义view-->
     <com.example.day04_water_fall02.WaterGroupNameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="热门搜索"
         android:textColor="#00ffff" />
-
+    <!--显示内容的自定义view-->
     <com.example.day04_water_fall02.WaterFall
         android:id="@+id/water_fall_hot"
         android:layout_width="wrap_content"
